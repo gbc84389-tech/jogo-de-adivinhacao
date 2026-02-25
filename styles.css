@@ -10,7 +10,7 @@ body {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    background: linear-gradient(to right, #2F2F2F, #131313);
+    background: linear-gradient(to right, #F9F8F0, #4b4b4b);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,8 +20,8 @@ body {
 
 .container {
     background-color: white;
-    border-top: 4px solid gray;
-    border-left: 4px solid gray;
+    border-top: 4px solid rgb(156, 156, 156);
+    border-left: 4px solid rgb(156, 156, 156);
     box-shadow: 4px 4px 4px rgb(138, 138, 138);
     border-radius: 30px;
     padding: 50px 30px 50px 30px;
@@ -81,6 +81,14 @@ body {
     font-weight: bold;
 }
 
+.inputs button:hover {
+    color: red;
+}
+
+.inputs button:active {
+    color: black;
+}
+
 .inputs input:focus {
     outline: none;
 }
@@ -95,12 +103,13 @@ input[type="number"]::-webkit-outer-spin-button {
 /*links*/
 .links {
     display: flex;
-    justify-content: center;
-    margin-top: 100px;
+    flex-direction: column;
+
+    padding-left: 10px;
 }
 
 .links a {
-    flex: 1; /* cada um ocupa o mesmo espaço */
+    flex: 1;
     transition: transform 0.2 ease;
 }
 
@@ -121,3 +130,13 @@ a:hover {
     width: 55px;
 }
 /*fim links*/
+
+.miscellaneous {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+}
