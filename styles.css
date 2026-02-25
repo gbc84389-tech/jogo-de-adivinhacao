@@ -10,20 +10,21 @@ body {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    background: linear-gradient(to right, #E7FACA, #E2FFBA);
+    background: linear-gradient(to right, #2F2F2F, #131313);
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    
 }
 
 .container {
     background-color: white;
-    box-shadow: 4px 4px 4px rgb(145, 145, 145);
+    border-top: 4px solid gray;
+    border-left: 4px solid gray;
+    box-shadow: 4px 4px 4px rgb(138, 138, 138);
     border-radius: 30px;
-    padding: 50px 30px 30px 50px;
+    padding: 50px 30px 50px 30px;
     max-width: 45vh;
 }
 /*TITULO*/
@@ -57,23 +58,26 @@ body {
     margin-bottom: 15px;
 }
 
-.inputs button {
-    margin-top: 12px;
-    border-radius: 7px;
-    font-size: 15px;
-    padding: 2px;
-    background-color: #e2ffbab9;
-}
-
 .inputs input {
     width: 7vh;
     padding: 1px;
     font-size: 30px;
     border-radius: 7px;
-    border: 2px solid #646464;
+    border: 2px solid gray;
     background-color: #e2ffbab9;
     box-shadow: 3px 3px 3px rgb(168, 168, 168);
     text-align: center;
+    outline: none;
+    transition: 0.2s;
+}
+
+.inputs button {
+    margin-top: 12px;
+    border-radius: 7px;
+    border: 2px solid gray;
+    font-size: 15px;
+    padding: 2px;
+    background-color: #e2ffbab9;
 }
 
 .inputs input:focus {
@@ -86,3 +90,33 @@ input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
+
+/*links*/
+.links {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.links a {
+    flex: 1; /* cada um ocupa o mesmo espaço */
+    transition: transform 0.2 ease;
+}
+
+#linkedin {
+    text-align: right;
+}
+
+#x {
+    text-align: center;
+}
+
+a:hover {
+    color: red;
+    transform: scale(1.2);
+}
+
+.links a img {
+    width: 55px;
+}
+/*fim links*/
